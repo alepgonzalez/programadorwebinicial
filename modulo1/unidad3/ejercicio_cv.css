@@ -1,0 +1,41 @@
+body{
+    background-color: #f1f1f1;
+}
+#contenedor{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#personales{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    background-color: crimson;
+    color: white;
+}
+
+#gustos{
+    padding-top: 30px;
+}
+
+#gustos-item{
+    float: left;
+    width: 50%;
+}
+
+#perfil{
+    padding-top: 30px;
+}
+
+p, label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#link-formulario{
+    padding-top: 30px;
+}

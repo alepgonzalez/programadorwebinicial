@@ -1,0 +1,58 @@
+body, p {
+	color: #787976;
+	font: 400 16px/25px "Open Sans", sans-serif;
+}
+
+#intro{
+    padding-bottom: 20px;
+}
+
+.contenido_centro{
+    margin: 40px;
+}
+
+.titulo-seccion {
+	color: #008578;
+	font: 500 13px/18px "Montserrat", sans-serif;
+    margin-top: 30px;
+}
+
+.texto-testimonios {
+	font-style: italic;
+}
+
+.texto-autor {
+	font: 700 16px/22px "Montserrat", sans-serif;
+}
+
+h2 {
+	color: #484a46;
+	font: 700 25px/30px "Montserrat", sans-serif;
+}
+
+.card{
+    margin: 20px;
+    width: 280px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+#formulario{
+    padding: 30px;
+}
+
+.btn.btn-primary{
+    border: 0.125rem solid #008578;
+	border-radius: 0.25rem;
+	background-color: #008578;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.btn.btn-primary:hover {
+	background-color: transparent;
+	color: #008578;
+}

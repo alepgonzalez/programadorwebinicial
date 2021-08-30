@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo_unidad1.css">
+    <script type="text/javascript" src="js/ejercicio1.js"></script>
+    <title>Módulo 2</title>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="encabezado">
+            <h1>Ejercicios Unidad 1 - Módulo 2</h1>
+        </div>
+
+        <h3>Ejercicio 1:</h3>
+        <div class="cuadrado" style='background-color: lightcoral;' onclick="cambiar_color(this.style.         backgroundColor);"></div>
+        <div class="cuadrado" style='background-color: lightgreen;' onclick="cambiar_color(this.style.         backgroundColor);"></div>
+        <div class="cuadrado" style='background-color: midnightblue;' onclick="cambiar_color(this.style.      backgroundColor);"></div>
+        
+        <h3>Ejercicio 2:</h3>
+        <div>
+            <textarea id="comentarios" maxlength="200" placeholder="Escribir comentarios aquí..."></textarea>
+        </div>
+        <div id="cant_caracteres">Comentarios: 0 de 200 caracteres</div>
+        <script>contar_caracteres();</script>
+    </div>
+</body>
+</html>

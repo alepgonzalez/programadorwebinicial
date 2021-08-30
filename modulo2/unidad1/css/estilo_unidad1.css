@@ -1,0 +1,44 @@
+body{
+    background-color: #f1f1f1;
+}
+#contenedor{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#encabezado{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    background-color: crimson;
+    color: white;
+}
+
+h3{
+    clear: both;
+    padding-left: 30px;
+}
+
+.cuadrado{
+    float: left;
+    width: 150px;
+    height: 150px;
+    border: 2px solid grey;
+    margin: 40px;
+}
+
+#comentarios{
+    width: 620px;
+    height: 100px;
+    margin-left: 40px;
+    resize: none;
+}
+
+#cant_caracteres{
+    padding-left: 40px;
+}

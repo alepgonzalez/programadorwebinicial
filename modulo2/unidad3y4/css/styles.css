@@ -67,7 +67,7 @@ h1, h2, h4{
 }
 
 /* boton primario */
-/* .btn.btn-primary{
+.btn.btn-primary{
     border: 0.125rem solid #008578;
 	border-radius: 0.25rem;
 	background-color: #008578;
@@ -78,7 +78,7 @@ h1, h2, h4{
 .btn.btn-primary:hover {
 	background-color: transparent;
 	color: #008578;
-} */
+}
 
 /* boton secundario */
 .btn.btn-secondary {
@@ -129,6 +129,19 @@ h1, h2, h4{
     background-color: #000;
 }
 
+/* historia */
+
+
+/* nosotros */
+.equipo{
+    background: #efefef;
+}
+
+/* card */
+.card{
+    margin-right: 20px;
+    margin-left: 20px;
+}
 
 /* footer */
 footer{

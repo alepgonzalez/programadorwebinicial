@@ -1,0 +1,158 @@
+/*body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}*/
+
+/* fuentes */
+/* font-family: 'Alfa Slab One', cursive;
+font-family: 'Open Sans', sans-serif; */
+
+/* titulos y textos */
+h1, h2, h4{
+  font-family: 'Alfa Slab One', cursive;
+}
+
+/* hero */
+.hero{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../img/ppal_hero.jpg) no-repeat;
+  background-size: cover;
+  height: 50vh;
+  min-height: 600px;
+  color: white;
+}
+
+/* lista novedades */
+.lista-novedades{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lista-novedades li{
+  margin: 4px 0;
+}
+
+.lista-novedades li a{
+  background-color: #fff;
+  font-family: 'Alfa Slab One', cursive;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #a0a0a0;
+  transition: all .4s ease-in-out;
+  display: block;
+}
+
+.lista-novedades li a:hover{
+  color: #008578;
+  background-color: #dadada;
+}
+
+.lista-novedades li a img{
+  width: 120px;
+  height: 50px;
+  filter: grayscale();
+  transition: all .4s ease-in-out;
+  margin-right: 1.5rem;
+  opacity: 0.8;
+}
+
+.lista-novedades li a:hover img{
+  filter: none;
+  margin-right: 2.5rem;
+  opacity: 1;
+}
+
+/* titulo modal */
+.modal-title{
+  color: #008578;
+}
+
+.modal-body img{
+  margin-bottom: 20px;
+}
+
+/* boton primario */
+.btn.btn-primary{
+  border: 0.125rem solid #008578;
+border-radius: 0.25rem;
+background-color: #008578;
+color: #fff;
+cursor: pointer;
+}
+
+.btn.btn-primary:hover {
+background-color: transparent;
+color: #008578;
+}
+
+/* boton secundario */
+.btn.btn-secondary {
+border: 0.125rem solid #787976;
+border-radius: 0.25rem;
+background-color: transparent;
+color: #787976;
+}
+
+.btn.btn-secondary:hover {
+background-color: #787976;
+color: #fff;
+}
+
+/* testimonios */
+.testimonios{
+  background-color: #dadada;
+  padding-bottom: 2rem !important;
+  text-align: center;
+}
+
+/* testimonio (item carousel) */
+.testimonio{
+  text-align: center;
+  padding: 30px 40px;
+}
+
+/* iconos carousel */
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  background-image: none;
+}
+
+.carousel-control-prev-icon:after, .carousel-control-next-icon:after{
+  font-family: "FontAwesome";
+  font-size: 30px;
+  color: #000;
+}
+
+.carousel-control-prev-icon:after{
+  content: "\f137";
+}
+
+.carousel-control-next-icon:after{
+  content: "\f138";
+}
+
+.carousel-indicators button{
+  background-color: #000;
+}
+
+/* historia */
+
+
+/* nosotros */
+.equipo{
+  background: #efefef;
+}
+
+/* card */
+.card{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* footer */
+footer{
+  background-color: #aaa;
+}

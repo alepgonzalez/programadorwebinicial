@@ -18,7 +18,7 @@ h1, h2, h4{
 
 /* hero */
 .hero{
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../img/ppal_hero.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../images/ppal_hero.jpg) no-repeat;
   background-size: cover;
   height: 50vh;
   min-height: 600px;

@@ -1,0 +1,14 @@
+<div class="container" style="margin-top: 150px; margin-bottom: 60px;">
+    {{#if error}}
+    <p class="texto-error">Usuario o contraseña incorrecto!</p>
+    {{/if}}
+    <form action="/admin/login" method="POST">
+        <div class="mb-3">
+            <input type="text" class="form-control" id="usuario" placeholder="Usuario" name="usuario">
+        </div>
+        <div class="mb-3">
+            <input type="password" class="form-control" id="password" placeholder="Contraseña" name="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+    </form>
+</div>

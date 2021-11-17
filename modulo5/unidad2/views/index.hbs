@@ -1,0 +1,252 @@
+<!-- inicio navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand logo-imagen" data-scroll href="/">
+            <img src="images/logo_sin_fondo.png" class="img-fluid" alt="logo-sin-fondo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" data-scroll href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-scroll href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-scroll href="#historia">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-scroll href="#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-scroll href="#conocenos">Conocenos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- fin navbar -->
+
+<!-- inicio contenido del sitio -->
+<div class="container-fluid">
+    <!-- inicio sección hero -->
+    <div id="home" class="row align-items-center hero">
+        <div class="col-lg-3 offset-lg-2">
+            <p>Servicios de Mensajería</p>
+            <h1 class="texto-sombra">ChauFila <br>Mensajería</h1>
+            <p>Somos una empresa especializada en servicios de cadetería y mensajería particular y empresarial.</p>
+        </div>
+    </div>
+    <!-- fin sección hero -->
+
+    <!-- inicio sección servicios -->
+    <div id="servicios" class="row py-4">
+        <!-- inicio servicios -->
+        <div class="col-md-5 offset-md-2 py-3">
+            <h2>Servicios</h2>
+            <ul class="lista-servicios">
+                {{#each servicios}}
+                <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal{{id}}">
+                        <img src="images/{{nombre_imagen}}" alt="{{nombre_imagen}}">{{titulo}}</a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        <!-- fin servicios -->
+
+        <!-- modal servicios-->
+        {{#each servicios}}
+        <div class="modal fade" id="modal{{id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">{{titulo}}</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h5>{{subtitulo}}</h5>
+                        <img class="img-fluid" src="images/{{nombre_imagen}}" alt="{{nombre_imagen}}">
+                        <p>{{cuerpo}}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+        <!-- fin modal servicios -->
+
+        <!-- inicio testimonios -->
+        <div class="col-md-3">
+            <div class="rounded py-3 testimonios">
+                <h2>Testimonios</h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="testimonio">
+                                <h5>Eluney Espinosa- Gerente</h5>
+                                <p>Recomiendo Chau Fila a todos los propietarios de negocios o líderes en
+                                    crecimiento que quieran llevar su empresa al siguiente nivel.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonio">
+                                <h5>Guillermina Rearte - Dueña Pastelería</h5>
+                                <p>Chau Fila asiste personalmente a los clientes y da su opinión sobre estrategias y
+                                    soluciones en logística.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonio">
+                                <h5>Daniel Gonzalez - Comerciante</h5>
+                                <p>Los chicos de Chau Fila ayudaron a que mi negocio despegara y se convirtiera en
+                                    una empresa rentable.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- fin testimonios -->
+    </div>
+    <!-- fin sección servicios -->
+
+    <!-- inicio historia -->
+    <div id="historia" class="row align-items-center py-4">
+        <div class="col-lg-2 col-md-3 offset-lg-2 d-none d-sm-block animacion-imagen">
+            <img src="images/historia1.jpg" alt="historia1" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 d-none d-sm-block animacion-imagen">
+            <img src="images/historia2.jpg" alt="historia2" class="img-fluid">
+        </div>
+        <div class="col-12 d-sm-none">
+            <img src="images/historia3.jpg" alt="historia3" class="img-fluid">
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
+            <h2>Historia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto adipisci exercitationem cumque
+                ipsum! Tempora voluptas officia modi laborum nostrum tenetur doloremque cumque consequatur assumenda
+                atque culpa, eum ut debitis nihil.</p>
+        </div>
+    </div>
+    <!-- fin historia -->
+
+    <!-- inicio nosotros -->
+    <div id="nosotros" class="row equipo py-4">
+        <div class="col-lg-8 offset-lg-2">
+            <h2>Nosotros</h2>
+            <div class="card-group">
+                <div class="card">
+                    <img src="images/equipo1.jpg" class="card-img-top" alt="equipo1">
+                    <div class="card-body">
+                        <h5 class="card-title">Diana Reyes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/equipo2.jpg" class="card-img-top" alt="equipo2">
+                    <div class="card-body">
+                        <h5 class="card-title">Juana Gomez</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
+                            doloremque ut at, consequatur odit accusantium modi, eveniet debitis architecto id quae
+                            quos ea rerum, voluptatum culpa asperiores non! Incidunt, beatae!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/equipo3.jpg" class="card-img-top" alt="equipo3">
+                    <div class="card-body">
+                        <h5 class="card-title">Roberto Zavala</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/equipo4.jpg" class="card-img-top" alt="equipo4">
+                    <div class="card-body">
+                        <h5 class="card-title">Luciano Figueroa</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+                            facere tempore labore quidem assumenda deserunt voluptas reprehenderit harum. Facere
+                            quibusdam porro dicta odit eius non quo aliquid, necessitatibus tenetur voluptatibus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin nosotros -->
+
+    <!-- inicio conocenos -->
+    <div id="conocenos" class="row py-4">
+        <!-- inicio visitanos -->
+        <div class="col-md-4 offset-md-2">
+            <h2>Visitanos</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7863.787481194086!2d-67.46474684057601!3d-45.825901969566644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde45609de35f931%3A0xcfe1a192df3789b2!2sUniversidad%20Nacional%20de%20la%20Patagonia%20San%20Juan%20Bosco%20-%20Sede%20Comodoro%20Rivadavia!5e0!3m2!1ses!2sar!4v1630631126836!5m2!1ses!2sar"
+                    style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+        <!-- fin visitanos -->
+
+        <!-- inicio contactanos -->
+        <div class="col-md-4 mt-4 mt-sm-0">
+            <h2>Contáctanos</h2>
+            <p class="texto-destacado">{{message}}</p>
+            <form class="row g-2" action="/" method="POST">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido" name="apellido">
+                </div>
+                <div class="col-12">
+                    <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                </div>
+                <div class="col-12">
+                    <input type="text" class="form-control" id="telefono" placeholder="Teléfono" name="telefono">
+                </div>
+                <div class="col-12">
+                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Mensaje"
+                        name="mensaje"></textarea>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <!-- fin contactanos -->
+    </div>
+    <!-- fin conocenos -->
+</div>
+<!-- fin contenido del sitio -->
+
+<!-- inicio footer -->
+<footer>
+    <p class="text-center texto-destacado">Diseñado por: Alejandra González - 2021</p>
+</footer>
+<!-- fin footer -->

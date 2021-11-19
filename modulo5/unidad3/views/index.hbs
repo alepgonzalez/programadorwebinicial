@@ -52,7 +52,7 @@
             <ul class="lista-servicios">
                 {{#each servicios}}
                 <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal{{id}}">
-                        <img src="images/{{nombre_imagen}}" alt="{{nombre_imagen}}">{{titulo}}</a>
+                        <img src="{{imagen}}">{{titulo}}</a>
                 </li>
                 {{/each}}
             </ul>
@@ -70,7 +70,7 @@
                     </div>
                     <div class="modal-body">
                         <h5>{{subtitulo}}</h5>
-                        <img class="img-fluid" src="images/{{nombre_imagen}}" alt="{{nombre_imagen}}">
+                        <img class="img-fluid" src="{{imagen}}">
                         <p>{{cuerpo}}</p>
                     </div>
                     <div class="modal-footer">

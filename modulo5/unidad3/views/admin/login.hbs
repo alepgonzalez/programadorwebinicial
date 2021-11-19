@@ -1,0 +1,17 @@
+<div class="container" style="margin-top: 150px; margin-bottom: 60px;">
+    <form class="row g-2" action="/admin/login" method="POST">
+        <h4>Iniciar Sesión</h4>
+        {{#if error}}
+        <p class="texto-error">Usuario o contraseña incorrecto!</p>
+        {{/if}}
+        <div class="col-12">
+            <input type="text" class="form-control" id="usuario" placeholder="Usuario" name="usuario">
+        </div>
+        <div class="col-12">
+            <input type="password" class="form-control" id="password" placeholder="Contraseña" name="password">
+        </div>
+        <div class="gap-2">
+            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        </div>
+    </form>
+</div>

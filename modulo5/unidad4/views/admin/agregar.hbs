@@ -1,0 +1,24 @@
+<div class="container" style="margin-top: 150px; margin-bottom: 60px;">
+    <form class="row g-2" action="/admin/servicios/agregar" method="POST" enctype="multipart/form-data">
+        <h4>Nuevo Servicio</h4>
+        {{#if error}}
+        <p class="texto-error">{{message}}</p>
+        {{/if}}
+        <div class="col-12">
+            <input type="text" class="form-control" id="titulo" placeholder="Título" name="titulo">
+        </div>
+        <div class="col-12">
+            <input type="text" class="form-control" id="subtitulo" placeholder="Subtítulo" name="subtitulo">
+        </div>
+        <div class="col-12">
+            <textarea class="form-control" id="cuerpo" rows="4" placeholder="Detalle del servicio"
+                name="cuerpo"></textarea>
+        </div>
+        <div class="col-12">
+            <label>Imagen: <input type="file" id="imagen" name="imagen"></label>
+        </div>
+        <div class="gap-2">
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+    </form>
+</div>
